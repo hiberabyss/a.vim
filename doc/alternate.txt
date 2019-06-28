@@ -13,7 +13,7 @@ Copyright: (c) 2000-2006 Michael Sharpe
            warranty.
 
 ==============================================================================
-1. Contents     *AS* *AV* *AT* *AN* *IH* *IHS* *IHV* *IHT* *IHN* *alternate*
+1. Contents     *AS* *AV* *AT* *AN* *alternate*
 
         1. Contents...........................: |alternate|
         2. Purpose............................: |alternate-purpose|
@@ -52,26 +52,8 @@ There are 4 commands provided by this plugin. They are
 
 :AT similar to :AS and :AV except a new tab is opened instead of a split
 
-:IH switches to the file under cursor (or the file specified with the 
-    command). This command uses the builtin a.vim search path support and the 
-    &path variable in conjunction.
-
-:IHS similar to :IH execpt the current buffer is split horizontally first
-
-:IHS similar to :IH execpt the current buffer is split vertically first
-
-:IHS similar to :IH execpt a new tab is created for the file being switched to
-
-:IHN switches to the next matching file for the original selection
-
 In all cases if the corresponding alternate file is already loaded that buffer
 is preferred. That is this plugin will never load the same file twice.
-
-Some maps are also provided for the IH command (mainly for example purposes)
-<Leader>ih - switches to the file under the cursor using the :IHS command
-<Leader>is - switches to the source file of the header file under the cursor 
-             using the :IHS command and the :A command
-<leader>ihn - switches to the next match in the sequence.
 
 ==============================================================================
 4. Configuration                                            *alternate-config*
